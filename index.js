@@ -1,8 +1,9 @@
 // const config = require('./config.js')
 const http = require('http')
 const weather = require('openweather-node')
+require('dotenv').config()
 
-weather.setAPPID('89f1c016380fc4077b547f8b59a1b70f')
+weather.setAPPID(process.env.CONSUMER_KEY)
 
 weather.now(process.argv[2], function(err, weather) {
   if (err) throw err
