@@ -1,4 +1,3 @@
-// const config = require('./config.js')
 const http = require('http')
 const weather = require('openweather-node')
 require('dotenv').config()
